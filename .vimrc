@@ -15,5 +15,14 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install --frozen-lockfile --production',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
+Plug 'leafgarland/typescript-vim'         " TypeScript if you're using it with Three.js
+Plug 'peitalin/vim-jsx-typescript'        " JSX and TypeScript support together
+Plug 'jalvesaq/Nvim-R'
+Plug 'sbdchd/neoformat'
+Plug 'preservim/nerdtree'
 call plug#end()
+
+autocmd VimEnter * NERDTree
+map <f2> :NERDTreeToggle<CR>
+nnoremap <F3> <C-w>w
 
