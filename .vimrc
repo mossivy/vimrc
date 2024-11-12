@@ -20,15 +20,19 @@ Plug 'leafgarland/typescript-vim'         " TypeScript if you're using it with T
 Plug 'peitalin/vim-jsx-typescript'        " JSX and TypeScript support together
 Plug 'jalvesaq/Nvim-R'
 Plug 'sbdchd/neoformat'
-Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree' 
 Plug 'davidhalter/jedi-vim'
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
+Plug 'chrisbra/vim-commentary' "gcc to comment 
 call plug#end()
 
+
+
 "NerdTree Settings
-autocmd VimEnter * NERDTree
+"R to reload nerdtree
+"autocmd VimEnter * NERDTree
 "F2 Keybinding for toggling NERDTree
 map <f2> :NERDTreeToggle<CR>
 "F3 Keybinding for switching focus between NERDTree and file
